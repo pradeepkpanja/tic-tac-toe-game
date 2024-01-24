@@ -1,3 +1,6 @@
+// git add .
+// git commit -m "Your commit message"
+// git push
 let boxes = document.querySelectorAll('.box');
 let resetBtn = document.querySelector('#reset-btn');
 let newBtn = document.querySelector('#new-btn');

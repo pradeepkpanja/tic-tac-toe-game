@@ -1,6 +1,4 @@
-// git add .
-// git commit -m "Your commit message"
-// git push
+
 let boxes = document.querySelectorAll('.box');
 let resetBtn = document.querySelector('#reset-btn');
 let newBtn = document.querySelector('#new-btn');
@@ -31,7 +29,7 @@ boxes.forEach((box) => {
             }
             box.disabled = true;
             countBtnClick++;
-            console.log(countBtnClick);
+        
             
             checkPattern();
             
@@ -51,7 +49,8 @@ const checkPattern = ()=>{
       if(pos1 != "" && pos2 !== "" && pos3 != ""){
         if(pos1 === pos2 && pos2 === pos3){
            
-            console.log(`Winner found ${pos1}`);
+           
+            countBtnClick = 0;
             winnerMessage(pos1);
            
             disableBoxes();
@@ -89,6 +88,7 @@ const winnerMessage = (winner)=>{
 
 //show message
 const drawMessage = ()=>{
+    countBtnClick = 0;
     msg.innerText = `It's a tie`;
     messageBlock.classList.remove('hide');
     resetBtn.classList.add('hide');

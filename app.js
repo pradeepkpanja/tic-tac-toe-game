@@ -38,7 +38,7 @@ boxes.forEach((box) => {
 })
 
 const checkPattern = ()=>{
-    if(countBtnClick == 9){
+    if(countBtnClick === 9){
         drawMessage();      
     }
     for(let pattern of winningPattern){
